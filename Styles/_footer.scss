@@ -17,6 +17,7 @@ footer {
       border: none;
       width: 2.5em;
       height: 2.5em;
+      cursor: pointer;
     }
   }
   p {
@@ -34,4 +35,7 @@ footer {
       color: $color-dark-blue;
     }
   }
+}
+.hidden {
+  display: none;
 }

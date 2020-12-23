@@ -1,0 +1,42 @@
+aside {
+  background-color: $color-dark-blue;
+  color: $color-desaturated-blue;
+  font-size: 1.5em;
+  padding: 1.5em;
+  display: none;
+  align-items: center;
+  p {
+    display: inline-block;
+    align-self: center;
+  }
+  a {
+    display: inline-block;
+    padding: 0em 0.5em;
+
+    img {
+      width: 1.7em;
+    }
+  }
+  .Share-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    img {
+      border-radius: 50%;
+      width: 4.5em;
+      min-width: 4.5em;
+    }
+    .btn {
+      align-self: center;
+      border-radius: 50%;
+      border: none;
+      width: 2.5em;
+      height: 2.5em;
+      background-color: $color-desaturated-blue;
+      cursor: pointer;
+    }
+  }
+}
+.flex {
+  display: flex !important;
+}
