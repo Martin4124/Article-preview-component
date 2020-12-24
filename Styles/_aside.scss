@@ -5,6 +5,16 @@ aside {
   padding: 1.5em;
   display: none;
   align-items: center;
+  @media (min-width: 1000px) {
+    display: none;
+    position: relative;
+    width: max-content;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    bottom: 190px;
+    left: 300px;
+    margin-bottom: -60px;
+  }
   p {
     display: inline-block;
     align-self: center;
@@ -12,15 +22,24 @@ aside {
   a {
     display: inline-block;
     padding: 0em 0.5em;
+    @media (min-width: 1000px) {
+      padding: 0em 0.5em;
+    }
 
     img {
       width: 1.7em;
+      @media (min-width: 1000px) {
+        width: 1.3em;
+      }
     }
   }
   .Share-button {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    @media (min-width: 1000px) {
+      display: none;
+    }
     img {
       border-radius: 50%;
       width: 4.5em;
@@ -34,6 +53,17 @@ aside {
       height: 2.5em;
       background-color: $color-desaturated-blue;
       cursor: pointer;
+    }
+  }
+  .arrow {
+    @media (min-width: 1000px) {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      position: relative;
+      top: 32px;
+      left: -110px;
+      background-color: $color-dark-blue;
     }
   }
 }

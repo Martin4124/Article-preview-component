@@ -7,4 +7,12 @@
   border-radius: 10px;
   overflow: hidden;
   font-size: 13px;
+  @media (min-width: 700px) {
+    display: flex;
+    max-width: 800px;
+    font-size: 14px;
+  }
+  @media (min-width: 1000px) {
+    overflow: visible;
+  }
 }
